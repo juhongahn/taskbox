@@ -10,7 +10,12 @@
       />
       <span class="checkbox-custom" @click="archiveTask" />
     </label>
-    <label :for="'title-' + task.id" :aria-label="task.title" class="title">
+    <label
+      :for="'title-' + task.id"
+      :aria-label="task.title"
+      class="title"
+      style="background-color: red"
+    >
       <input
         type="text"
         readonly
